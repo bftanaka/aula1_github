@@ -1,0 +1,57 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities._005_Account;
+
+public class _005_MainBanco {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		String number;
+		String name;
+		String option;
+	
+		double deposit;
+		double withDraw;
+		
+		_005_Account saldo;
+		saldo = new _005_Account();
+		
+		System.out.print("Enter account number: ");
+		number = sc.next();
+		
+		System.out.print("Enter account holder: ");
+		name = sc.next();
+		
+		System.out.print("Is there na initial deposit (y/n)?");
+		option = sc.next();
+		
+		
+		System.out.print("Enter initial deposit value: ");
+		double initial = sc.nextDouble();
+
+		_005_Account conta = new _005_Account(number, name, option, initial);
+		
+		
+		
+		System.out.print("Enter a deposit value: ");
+		deposit = sc.nextDouble();
+		
+		System.out.print("Enter a withdraw value: ");
+		withDraw = sc.nextDouble();
+
+		_005_Account conta2 = new _005_Account(deposit, withDraw);
+		
+		
+		System.out.println(saldo);
+		
+		sc.close();
+		
+	}
+
+}

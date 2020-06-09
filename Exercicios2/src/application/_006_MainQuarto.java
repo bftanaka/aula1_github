@@ -1,0 +1,63 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities._006_Quarto;
+
+public class _006_MainQuarto {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("How many rooms will be rented? ");
+		int n = sc.nextInt();
+		
+		if (n > 9) {
+			n = 9;
+		}
+		
+		if (n < 0) {
+			n = 1;
+		}
+		
+		_006_Quarto[] rent = new _006_Quarto[10];
+
+		for (int i=0; i<n; i++) {
+			sc.nextLine();
+			
+			System.out.println("RENT #"+ (i+1));
+			
+			System.out.print("Name: ");
+			String nome = sc.nextLine();
+			
+			System.out.print("Email: ");
+			String email = sc.nextLine();
+			
+			System.out.print("Room: ");
+			int quarto = sc.nextInt();
+			
+			sc.nextLine();
+			
+			rent[quarto] = new _006_Quarto(nome, email);
+		}
+		
+		sc.nextLine();
+		
+		System.out.println("Busy rooms:");		
+		
+		
+		for (int i=0; i<10 ; i++) {
+			
+			if (rent[i] != null) {
+				System.out.println(i + ": " + rent[i]);
+			}
+			
+		}
+	
+		sc.close();
+	}
+
+}

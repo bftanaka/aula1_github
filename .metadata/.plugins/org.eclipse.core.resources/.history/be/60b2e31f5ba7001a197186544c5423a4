@@ -1,0 +1,10 @@
+package application;
+
+public class _007_MainFuncionarios {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.FdLibm.Pow"/>
+    <fullyQualifiedTypeName name="entities.Triangle"/>
+    <fullyQualifiedTypeName name="entities.Rectangle"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="entities._002_Employee"/>
+    <fullyQualifiedTypeName name="entities._003_Aluno"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="entities._004_CurrencyConverter"/>
+    <fullyQualifiedTypeName name="entities._001_Product"/>
+    <fullyQualifiedTypeName name="entities._005_Account"/>
+    <fullyQualifiedTypeName name="jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment"/>
+    <fullyQualifiedTypeName name="entities._002_Product"/>
+    <fullyQualifiedTypeName name="entities._006_Quarto"/>
+    <fullyQualifiedTypeName name="entities._007_Employee"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

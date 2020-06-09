@@ -1,0 +1,77 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class _005_ExercMatriz {
+
+	public static void main(String[] args) {
+	
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Quantidade Linhas:");
+		int linha = sc.nextInt();
+		
+		System.out.println("Quantidade Colunas:");
+		int coluna = sc.nextInt();
+		
+		int [][] matriz = new int [linha][coluna];
+
+		System.out.println("Valores para a Matriz:");
+		for (int i=0; i<linha ; i++) {
+			for (int j=0; j<coluna ; j++) {
+				matriz[i][j] = sc.nextInt();
+				
+			}
+		}
+		
+		System.out.println("Valor para busca:");
+		int valor = sc.nextInt();
+		
+				
+		System.out.println("Matriz Completa:");
+		for (int i = 0; i < linha; i++) {			
+			for (int j=0; j<coluna ; j++) {
+			System.out.print(matriz[i][j] + " ");			
+			}
+			System.out.println();
+		}
+		
+		System.out.println();
+		
+		
+		for (int i = 0; i < linha; i++) {			
+			for (int j=0; j<coluna ; j++) {
+				
+				if(matriz[i][j] == valor) {
+					System.out.print("Position: ");
+					System.out.println(i + "," + j);	
+					
+					if(i > 0) {
+					System.out.print("Up: ");
+					System.out.println(matriz[i-1][j]);										
+					}
+					
+					if(i < matriz.length) {
+					System.out.print("Down: ");
+					System.out.println(matriz[i+1][j]);
+					}
+					
+					if(j > 0) {
+					System.out.print("Left: ");
+					System.out.println(matriz[i][j-1]);
+					}
+					
+					if(j < matriz.length) {
+					System.out.print("Right: ");
+					System.out.println(matriz[i][j+1]);
+					}
+				}
+						
+			}
+			System.out.println();
+		}
+		
+		sc.close();
+	}
+
+}

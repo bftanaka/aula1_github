@@ -1,0 +1,29 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities._002_Product;
+
+
+public class _002_Vetor {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int n = 0;
+		
+		n = sc.nextInt();
+		
+		_002_Product[] vect = new _002_Product[n];
+
+		for (int i=0, i<n, i++) {
+			
+		}
+		
+		sc.close();
+	}
+
+}
